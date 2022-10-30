@@ -29,10 +29,25 @@ public class Pohon<T> {
           }
           for (Node<T> child : parent.childs) {
                Node<T> temp = cari(child, data);
-               if(temp != null){
+               if (temp != null) {
                     return temp;
                }
           }
           return null;
      }
+
+     /*
+      * Berdasarkan kode program terkait Tree yang dibuat di kelas.
+      * Lengkapi fungsi class Pohon yang dibuat untuk fungsi-fungsi berikut:
+      * Getting a node's parent node
+      * Calculating a node's height
+      * Calculating a node's level
+      * Finding all Leaf nodes
+      * Finding all non-Leaf nodes
+      * Finding all ancestors of a node
+      * Finding all descendants of a node
+      * Finding the siblings of a node
+      * Kerjakan secara berkelompok, dengan satu kelompok maksimal 2 orang.
+      * Kerjakan minimal 4 fungsi tambahan yang berbeda.
+      */
 }
