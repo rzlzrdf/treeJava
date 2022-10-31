@@ -41,7 +41,7 @@ public class Pohon<T> {
      public Node<T> getParent(Node<T> child){
           
           //cek jika tidak punya child maka dia langusn mengembalikan parent          
-          if(child.childs == null){
+          if(child.isLeaf() == true){
                return child;
           }
           return child;
@@ -51,7 +51,7 @@ public class Pohon<T> {
 
      public void berapaLevel(Node<T> parent){
           //cek jik todak memil
-          if(parent.childs == null){
+          if(parent.isLeaf() == true){
                System.out.println("0");
           }
           // menghitung turunan
