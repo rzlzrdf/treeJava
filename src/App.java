@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Pohon<String> p = new Pohon<String>("H");
+
         p.createChild(p.root, new Node<String>("D"));
         p.createChild(p.root, new Node<String>("K"));
 
@@ -16,6 +17,7 @@ public class App {
         p.createChild(nodeF, new Node<String> ("E"));
         p.createChild(nodeF, new Node<String> ("G"));
 
-        p.telusur(p.root);
+        p.telusur(nodeD);
+        p.getParent(nodeF);
     }
 }

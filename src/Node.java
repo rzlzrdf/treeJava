@@ -10,4 +10,7 @@ public class Node<T> {
           this.childs = new LinkedList<Node<T>>();
           
      }
+     public boolean isLeaf(){
+          return this.childs.size() == 0;
+     }
 }

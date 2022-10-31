@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Pohon<T> {
      Node<T> root;
 
@@ -35,6 +37,31 @@ public class Pohon<T> {
           }
           return null;
      }
+     
+     public Node<T> getParent(Node<T> child){
+          
+          //cek jika tidak punya child maka dia langusn mengembalikan parent          
+          if(child.childs == null){
+               return child;
+          }
+          return child;
+          
+     }
+     
+
+     public void berapaLevel(Node<T> parent){
+          //cek jik todak memil
+          if(parent.childs == null){
+               System.out.println("0");
+          }
+          // menghitung turunan
+          for (int i = 0 ; parent.childs.size(); i++) {
+              Node<T> temp  = cari(child, parent);
+              System.out.println(temp);
+          }
+              
+     }
+     
 
      /*
       * Berdasarkan kode program terkait Tree yang dibuat di kelas.
